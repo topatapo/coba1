@@ -2,34 +2,88 @@
  ===========General========
 ==================================== */
   
-
-
-  /*******left********/
- fieldset{
-      border: 1px solid black;
-    }
-
-     .release{
-      background-color: white;
-      margin-top: 15px;
-      margin-right: 10px;
-      border: 1px solid black;
-    }
-    legend{
-      font-size: 13px;
-      margin-left: 10px;
-      background-color: white;
-      color: black;
-      border-color: white;
-      border: 1px solid black;
-    }
-    .popular{
-      background-color: white;
-      margin-top: 15px;
-      margin-right: 10px;
-    }
-
 /*******Header********/
+
+.logo{
+    height: 50px;
+    width: 39px;
+    background-color: transparent;
+
+  }
+  .navbar {
+    background: #831111;
+    height: 7%;
+  }
+  .navbar-nav{
+    padding-top: 2px;
+    font-family: arial black;
+    font-size: 11px;
+  }
+  .navbar-left{
+    width: 15%;
+  }
+  .nav-link{
+    color: white;
+  }
+
+  /*********Search********/
+
+  .box-search{
+    width: 140%;
+    height: 55px;
+    font-size: 15px;
+    margin-top: 2px;
+  }
+  .input-search{
+    width: 180px;
+    height: 42px;
+
+   
+  }
+  .btn-search{
+    height: 48px;
+    width: 55px;
+    margin-left: 5px;
+
+
+  }
+  .pcari{
+    height: 52px;
+    width: 130%;
+    padding-top: 15px;
+    padding-left: 25px;
+  }
+  .be-cari{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+  }
+  .af-cari{
+    height: 22px;
+    width: 22px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    top: 15px;
+  }
+  .icari{
+    height: 20px;
+    width: 20px;
+  }
+
+  .btn-be-search{
+    height: 52px;
+    width: 55px;
+
+  }
+  .btn-be-search:hover {
+    background-color: white
+  }
+
+
+
+
+
 
 
 /* ===================================
