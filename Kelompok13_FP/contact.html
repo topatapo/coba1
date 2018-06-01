@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".box-search").hide();
+        $(".btn-be-search").hide();
+        
+        // Search
+        $(".pcari").click(function(){
+          $(".box-search").show();
+          $(".btn-be-search").show();
+          $(this).hide();
+            });
+          $(".dropdown-menu").hide();
+
+        $(".btn-be-search").mouseenter(function(){
+          $(this).css("cursor","pointer");
+         });
+
+        $(".btn-be-search").click(function(){
+          $(".pcari").show();
+          $(this).hide();
+          $(".box-search").hide();
+           });
+        
+        $(".pcari").mouseenter(function(){
+          $(this).css("cursor","pointer");
+        });
+        // dropdown
+        $(".dropdown").mouseenter(function(){
+          $(".dropdown-toggle").dropdown();
+        });
+
+        $(".dropdown").mouseleave(function(){
+          $(".dropdown-menu").hide();
+        });
+
+        });   
+
+    </script>
+
+    <script>
+
+      var app = angular.module('app', []);
+      app.controller('validateCtrl', function($scope) {
+          $scope.name = '';
+          $scope.email = '';
+      });
+    </script>
+
+    <style type="text/css">
+      body{
+        background-color: black;
+      }
+      .cont{
+        float: left;
+      }
+      .follow{
+        float: left;
+      }
+      .main{
+        background-color: white;
+        margin-top: 70px;
+        height: 800px;
+      }
+      .txt{
+        width: 600px;
+        margin-top: 20px;
+        margin-left: 80px;
+      }
+      h2{
+        margin-left: 80px;
+      }
+      .ipt{
+        height: 40px;
+        width: 600px;
+        margin-top: 30px;
+        margin-left: 80px;
+      }
+      .ipt2{
+        height: 40px;
+        width: 600px;
+        margin-top: 40px;
+        margin-left: 80px;
+      }
+      .twt{
+        height: 50px;
+        width: 50px;
+        margin-left: 55px;
+        margin-top: 20px;
+        float: left;
+      }
+
+      .twt1{
+        height: 50px;
+        width: 50px;
+        margin-left: 52px;
+        margin-top: 25px;
+        color: black;
+        text-decoration: none;
+        font-size: 30px;
+        float: left;
+      }
+      .twt1:hover{
+        text-decoration: none;
+      }
+      .fb{
+        height: 80px;
+        width: 80px;
+        margin-right: 38px;
+        margin-left: 39px;
+        margin-top: 15px;
+        float: left;
+   
+      }
+      .fb1{
+        height: 50px;
+        width: 50px;
+        margin-top: 40px;
+        color: black;
+        text-decoration: none;
+        font-size: 30px;
+        float: left;
+      }
+      .fb1:hover{
+        text-decoration: none;
+      }
+      .ggl{
+        height: 50px;
+        width: 50px;
+        margin-right: 100px;
+        margin-left: 53px;
+        margin-top: 20px;
+        float: left;
+      }
+      .ggl1{
+        height: 50px;
+        width: 50px;
+        color: black;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left: -47px;
+        left: 50px;
+        float: left;
+      }
+      .ggl1:hover{
+        text-decoration: none;
+      }
+      .send{
+        margin-top: 15px;
+        margin-left: 300px;
+        margin-bottom: 30px;
+      }
+    </style>
+</head>
+<body ng-app="app">
+<header id="header">
+   <nav class="navbar fixed-top navbar-expand-md navbar-no-bg">
+       <div class="container">
+        <img src="assets/img/logo.png" alt="logo" class="logo navbar-left">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="nav navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#top-content">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Pc Games</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link scroll-link dropdown-toggle" href="#">Consol</a>
+                      <div class="dropdown-menu">
+                         <a class="dropdown-item" href="#">Playstation</a> 
+                         <a class="dropdown-item" href="#">Xbox</a>
+                         <a class="dropdown-item" href="#">Nintendo</a> 
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Mobile</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Review</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Trailer</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Team</a>
+                  </li>
+              </ul>
+              <ul class="nav navbar-nav ml-auto">
+               <li class="nav-item"> <a class="nav-link scroll-link pcari"><img class="be-cari" src="assets/img/search-icon.png">
+            </a></li>
+             <li class="nav-item">
+              <form action="search.html">
+                <div class="box-search">
+                  <a><input class="input-search" type="text" name="search" placeholder="Search.."><button  autofocus="true" class="btn-search" type="submit"><img class="icari" src="assets/img/search-icon.png"></button></a>
+                </div>
+              </form>
+              </li>
+               <li class="nav-item">
+            <!--/.Menu-->
+              <div class="btn-be-search nav-link scroll-link">
+                <img class="af-cari" src="assets/img/close-icon.png">
+               </div>
+             </li>
+              </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <!--/nav-->
+
+  </header>
+<!--/header-->
+  
+  
+
+<div class="container main">
+  <div class="cont">
+    <h2>Contact Us</h2>
+    <form ng-app ="" ng-controller="validateCtrl" name="myform" novalidate>
+      <input type="text" name="name" ng-model="name" class="form-control ipt" placeholder="Enter name" required>
+      <span style="color:red; margin-left: 90px;" ng-show="myform.name.$dirty && myform.name.$invalid">
+      <span ng-show="myform.name.$error.required">Name is required.</span>
+      </span>
+      <input type="email" name="email" ng-model="input" class="form-control ipt2" placeholder="Enter email" required>
+      <span style="color:red; margin-left: 90px;" ng-show="myform.email.$dirty && myform.email.$invalid">
+      <span ng-show="myform.email.$error.required">Email is required.</span>
+      <span ng-show="myform.email.$error.email">Invalid email address.</span>
+      </span>
+      <input type="text" name="subject" class="form-control ipt2" placeholder="Enter subject">
+      <textarea name="your-massage" class="form-control txt" placeholder="Enter your massage" aria-invalid="false" cols="40" rows="10">Enter Your Message
+      </textarea>
+      <input class="send" type="submit" value="Send Your Message" 
+      ng-disabled="myform.name.$dirty && myform.name.$invalid ||  
+      myform.email.$dirty && myform.email.$invalid">
+    </form>
+  </div>
+  <div class="follow">
+    <div>
+    <h2>Follow Us On :</h2>
+    <img class="twt" src="assets/img/twitter.png"><a class="twt1" href="#">Twitter</a><br>
+    </div><br>
+    <div>
+    <img class="fb" src="assets/img/facebook.png"><a class="fb1" href="#">Facebook</a>
+    </div>
+    <div>
+      <img class="ggl" src="assets/img/google.png"><a class="ggl1" href="#">Google+</a>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

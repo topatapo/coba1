@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	  <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+
+    <script>
+    	$(document).ready(function(){
+    		
+         // Search
+        $(".box-search").hide();
+        $(".btn-be-search").hide();
+        
+    		$(".pcari").click(function(){
+    			$(".box-search").show();
+          $(".btn-be-search").show();
+          $(this).hide();
+    		    });
+          $(".dropdown-menu").hide();
+
+        $(".btn-be-search").mouseenter(function(){
+          $(this).css("cursor","pointer");
+         });
+
+        $(".btn-be-search").click(function(){
+          $(".pcari").show();
+          $(this).hide();
+          $(".box-search").hide();
+           });
+        
+        $(".pcari").mouseenter(function(){
+          $(this).css("cursor","pointer");
+        });
+        // dropdown
+        $(".dropdown").mouseenter(function(){
+          $(".dropdown-toggle").dropdown();
+        });
+
+        $(".dropdown").mouseleave(function(){
+          $(".dropdown-menu").hide();
+        });
+
+        // Slide
+        $("#slide").carousel();
+    
+    // Enable Carousel Indicators
+      $(".item1").click(function(){
+          $("#slide").carousel(0);
+      });
+      $(".item2").click(function(){
+          $("#slide").carousel(1);
+      });
+      $(".item3").click(function(){
+          $("#slide").carousel(2);
+      });
+      
+      // Enable Carousel Controls
+      $(".carousel-control-prev").click(function(){
+          $("#slide").carousel("prev");
+      });
+      $(".carousel-control-next").click(function(){
+          $("#slide").carousel("next");
+      });
+
+      	});   
+    </script>
+    <style type="text/css">
+       fieldset{
+      border: 1px solid black;
+    }
+    legend{
+      font-size: 13px;
+      margin-left: 15px;
+      background-color: white;
+      width: auto;
+      color: black;
+      border-color: white;
+      border: 1px solid black;
+    }
+    </style>
+
+</head>
+<!--/.head-->
+<body style="background-color: #232323;">
+
+    <nav class="navbar fixed-top navbar-expand-md navbar-no-bg">
+       <div class="container">
+        <img src="assets/img/logo.png" alt="logo" class="logo navbar-left">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="nav navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#top-content">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Pc Games</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link scroll-link dropdown-toggle" href="#">Consol</a>
+                      <div class="dropdown-menu">
+                         <a class="dropdown-item" href="#">Playstation</a> 
+                         <a class="dropdown-item" href="#">Xbox</a>
+                         <a class="dropdown-item" href="#">Nintendo</a> 
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Mobile</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Review</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Trailer</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="#">Team</a>
+                  </li>
+              </ul>
+              <ul class="nav navbar-nav ml-auto">
+               <li class="nav-item"> <a class="nav-link scroll-link pcari"><img class="be-cari" src="assets/img/search-icon.png">
+            </a></li>
+             <li class="nav-item">
+              <form action="search.html">
+                <div class="box-search">
+                  <a><input class="input-search" type="text" name="search" placeholder="Search.."><button  autofocus="true" class="btn-search" type="submit"><img class="icari" src="assets/img/search-icon.png"></button></a>
+                </div>
+              </form>
+              </li>
+               <li class="nav-item">
+            <!--/.Menu-->
+              <div class="btn-be-search nav-link scroll-link">
+                <img class="af-cari" src="assets/img/close-icon.png">
+               </div>
+             </li>
+              </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <!--/nav--> 
+
+<!--/header-->
+
+ <div class="container">
+
+  		 <div id="slide" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li class="item1 active"></li>
+      <li class="item2"></li>
+      <li class="item3"></li>
+    </ul>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner ">
+
+      <div class="carousel-item active " id="slide">
+        <img src="assets/img/so-1.jpg" alt="#"  class="imgSlide">
+        <div class="carousel-caption slide-content">
+          <h3>Lorem</h3>
+          <p>Lorem Ipsum</p>
+        </div>
+      </div>
+
+      <div class="carousel-item ">
+        <img src="assets/img/asusRog.jpg" alt="#" class="imgSlide">
+        <div class="carousel-caption slide-content">
+          <h3>Lorem</h3>
+          <p>Lorem Ipsum</p>
+        </div>
+      </div>
+    
+      <div class="carousel-item">
+        <img src="assets/img/wwtank.jpg" alt="#" class="imgSlide" >
+        <div class="carousel-caption slide-content">
+          <h3>Lorem</h3>
+          <p>Lorem Ipsum</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#slide">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#slide">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+  </div>
+</div>
+<!--/.container-->
+<div class="container">
+  <div class="row no-gutters " style="background-color: #2d2c2c">
+    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 no-gutters">
+       <fieldset class="release">
+        <legend>Game Release Date</legend>
+        
+          <hr><ul>
+          <li><span><a class="list" href="#">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="#">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="#">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="#">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="#">God of War Terbaru telah rilis</a></span></li>
+        </ul>
+      </fieldset>
+      <br>
+      <fieldset class="popular">
+        <legend>Popular Articles</legend>
+        <ul>
+          <li><span><a class="list" href="#">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="#">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="#">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="#">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="#">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+        </ul>
+      </fieldset>
+  </div>
+<!--/Left-->
+  
+    
+  <!--/heading-->
+
+    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12 no-gutters">
+      <div class="heading">
+        <p>News...</p>
+         </div>
+          <div class="col-xl-12  col-lg-12 col-md-12 col-sm-12 col-xs-12 no-gutters">
+          
+           <div class="grid-news col-lg-12  col-md-4 col-sm-12 col-xs- no-gutters">
+            <div class="row">
+              <!--News-->
+              <div class="col-lg-4 no-gutters">
+                <div class="news">
+                  <a href=""><img src="assets/img/asusRog.jpg" class="image-news"></a>
+                    <div class="news-title">
+                       <h1>
+                         <a href="">Lorem Ipsume</a>
+                       </h1>
+                       </div>
+                       <div class="news-content">
+                          Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar
+                      </div>
+                    <div class="read-more"><a href="">Read More <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                 </div>
+               </div>
+
+                <div class="col-lg-4 no-gutters">
+                <div class="news">
+                  <a href=""><img src="assets/img/asusRog.jpg" class="image-news"></a>
+                    <div class="news-title">
+                       <h1>
+                         <a href="">Lorem Ipsume</a>
+                       </h1>
+                       </div>
+                       <div class="news-content">
+                          Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar
+                      </div>
+                    <div class="read-more"><a href="">Read More <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                 </div>
+               </div>
+
+                <div class="col-lg-4 no-gutters">
+                <div class="news">
+                  <a href=""><img src="assets/img/asusRog.jpg" class="image-news"></a>
+                    <div class="news-title">
+                       <h1>
+                         <a href="">Lorem Ipsume</a>
+                       </h1>
+                       </div>
+                       <div class="news-content">
+                          Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar
+                      </div>
+                    <div class="read-more"><a href="">Read More <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                 </div>
+               </div>
+
+                <div class="col-lg-4 no-gutters">
+                <div class="news">
+                  <a href=""><img src="assets/img/asusRog.jpg" class="image-news"></a>
+                    <div class="news-title">
+                       <h1>
+                         <a href="">Lorem Ipsume</a>
+                       </h1>
+                       </div>
+                       <div class="news-content">
+                         Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar
+                      </div>
+                    <div class="read-more"><a href="">Read More <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                 </div>
+               </div>
+
+                <div class="col-lg-4 no-gutters news-box">
+                <div class="news">
+                  <a href=""><img src="assets/img/asusRog.jpg" class="image-news"></a>
+                    <div class="news-title">
+                       <h1>
+                         <a href="">Lorem Ipsume</a>
+                       </h1>
+                       </div>
+                       <div class="news-content">
+                          Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar
+                      </div>
+                    <div class="read-more"><a href="">Read More <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                 </div>
+               </div>
+
+                <div class="col-lg-4 no-gutters">
+                <div class="news">
+                  <a href=""><img src="assets/img/asusRog.jpg" class="image-news"></a>
+                    <div class="news-title">
+                       <h1>
+                         <a href="">Lorem Ipsume</a>
+                       </h1>
+                       </div>
+                       <div class="news-content">
+                          Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar
+                      </div>
+                    <div class="read-more"><a href="">Read More <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                 </div>
+               </div>
+
+                <div class="col-lg-4 no-gutters">
+                <div class="news">
+                  <a href=""><img src="assets/img/asusRog.jpg" class="image-news"></a>
+                    <div class="news-title">
+                       <h1>
+                         <a href="">Lorem Ipsume</a>
+                       </h1>
+                       </div>
+                       <div class="news-content">
+                          Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar
+                      </div>
+                    <div class="read-more"><a href="">Read More <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                 </div>
+               </div>
+
+                <div class="col-lg-4 no-gutters">
+                <div class="news">
+                  <a href=""><img src="assets/img/asusRog.jpg" class="image-news"></a>
+                    <div class="news-title">
+                       <h1>
+                         <a href="">Lorem Ipsume</a>
+                       </h1>
+                       </div>
+                       <div class="news-content">
+                          Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar
+                      </div>
+                    <div class="read-more"><a href="">Read More <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                 </div>
+               </div>
+
+               <div class="col-lg-4 no-gutters">
+                <div class="news">
+                  <a href=""><img src="assets/img/asusRog.jpg" class="image-news"></a>
+                    <div class="news-title">
+                       <h1>
+                         <a href="">Lorem Ipsume</a>
+                       </h1>
+                       </div>
+                       <div class="news-content">
+                          Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar
+                      </div>
+                    <div class="read-more"><a href="">Read More <span class="glyphicon glyphicon-plus"></span></a>
+                    </div>
+                 </div>
+               </div>
+
+        <!--/news-->
+          </div>
+          </div>
+           
+          </div>
+      </div>
+              
+     </div>
+    </div>
+      
+</div>
+    
+    
+    
+    
+
+<!--/ col-xl-12 col-md-14-->
+
+  	
+<!--/homepage-->
+
+<!--/Container-->
+</body>
+</html>

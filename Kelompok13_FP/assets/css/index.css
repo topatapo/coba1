@@ -1,0 +1,74 @@
+/*******Homepage******/
+
+.homepage{
+  margin-top: 10px;
+  margin-bottom: 15px; 
+  height: 1450px;
+  background-color: transparent;
+}
+/*******Top******/
+.col-lg-13{
+  background:transparent;
+}
+/*******SlideShow******/
+.imgSlide{
+  height:350px; 
+  width: 100%;
+}
+
+/*******Left******/
+.col-lg-4{
+  background-color: yellow;
+  height: 1100px;
+  position: absolute;
+}
+.sidebox-gamerelese{
+  height: 350px;
+  width:100%;
+  background-color: blue
+}
+.sidebar-gamerelese{
+  height: 40px;
+  background-color: red;
+
+}
+.sidebar-title{
+  font-size: 15px;
+  text-align: center;
+  font-family: arial black;
+  padding-top: 5px;
+}
+ 
+.sidebox-populararticles{
+  height: 350px;
+  width:100%;
+  background-color: blue
+}
+.sidebar-populararticles{
+  height: 40px;
+  background-color: red;
+
+}
+
+/*******Right******/
+.col-lg-8{
+  background-color: red;
+  height: 1100px;
+  padding-right: -40px; 
+
+}
+.col-md-3{
+  background-color: transparent;
+  height: 360px;
+  
+}
+.news{
+  width: 1000px;
+
+}
+
+.con-news{
+  width: 220px;
+  height: 330px;
+  background-color: blue;
+}
